@@ -1,33 +1,36 @@
 {
   "expo": {
-    "name": "brain-dump",
-    "slug": "brain-dump",
+    "name": "BrainDump",
+    "slug": "braindump",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/adaptive-icon.png",
+    "scheme": "braindump",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#F8E6CF"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.braindump.app"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#F8E6CF"
       },
-      "edgeToEdgeEnabled": true
+      "package": "com.braindump.app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-router",
-      "expo-font"
+      "expo-router"
     ]
   }
 }
